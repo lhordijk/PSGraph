@@ -1,4 +1,4 @@
-![Build status](https://ci.appveyor.com/api/projects/status/r32ugbl67qxagmbp/branch/master?svg=true))
+[![Build status](https://ci.appveyor.com/api/projects/status/jqbwq2rtbpt995ag?svg=true)](https://ci.appveyor.com/project/gemeenteutrecht/psgraph)
 
 # Introduction 
 TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 

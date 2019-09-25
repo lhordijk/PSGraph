@@ -1,5 +1,5 @@
 $projectRoot = Resolve-Path "$PSScriptRoot\.."
-$moduleRoot = Split-Path (Resolve-Path "$projectRoot\*\*.psm1")
+$moduleRoot = Split-Path -Path (Resolve-Path "$projectRoot\*\*.psm1")
 $moduleName = Split-Path $ModuleRoot -Leaf
 
 Describe "General Project Validation: $moduleName" {
@@ -10,7 +10,7 @@ Describe "General Project Validation: $moduleName" {
     $testCase = $scripts | ForEach-Object {@{file=$_}}
 
     It "Script <file> should be valid PowerShell" -TestCases $testCase {
-        param(${env:ProgramFiles(x86)}
+        param($file)
 
         $file.fullname | Should Exist
 
