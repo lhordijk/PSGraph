@@ -1,9 +1,5 @@
 # See http://www.appveyor.com/docs/appveyor-yml for many more options
 
-version: 1.0.{build}
-build:
-  verbosity:minimal
-
 environment:
   NugetApiKey:
     secure: mnupUjmQMCAIdoJ/r/paXKSjFoHOgsErSDfwNQBlPjdRAWU3oQ0ptxWCim3xlA7k 
@@ -11,7 +7,7 @@ environment:
 # unsecure: oy2gedxddz3r4dkycl7qvxs253pkzr2efmvrh5qtpgsdl4
   
 # Allow WMF5 (i.e. PowerShellGallery functionality)
-os:WMF 5
+os: WMF 5
 
 # Skip on updates to the readme.
 # We can force this by adding [skip ci] or [ci skip] anywhere in commit message
